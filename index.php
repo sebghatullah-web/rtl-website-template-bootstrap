@@ -75,8 +75,6 @@
 
     <?php include_once 'services.php'; ?>
 
-    <?php include_once 'stats.php'; ?>
-
     <?php include_once 'action.php'; ?>
 
     <?php include_once 'portfolio.php'; ?>
@@ -103,7 +101,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

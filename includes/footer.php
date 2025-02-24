@@ -1,4 +1,51 @@
-<footer id="footer" class="footer dark-background" dir="rtl">
+<?php
+// اتصال به دیتابیس
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "example";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// بررسی اتصال
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
+  $email = $_POST['email'];
+
+  // اعتبارسنجی ایمیل
+  if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    // آماده‌سازی و اجرای دستور SQL برای درج ایمیل
+    $stmt = $conn->prepare("INSERT INTO news (email) VALUES (?)");
+    $stmt->bind_param("s", $email);
+
+    if ($stmt->execute()) {
+      echo "<script>alert('ایمیل شما با موفقیت ثبت شد!');</script>";
+    } else {
+      echo "<script>alert('خطا در ثبت ایمیل.');</script>";
+    }
+
+    $stmt->close();
+  } else {
+    echo "<script>alert('ایمیل وارید شده معتبر نیست.');</script>";
+  }
+}
+
+$conn->close();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>footer | example bootstrap template</title>
+</head>
+<body>
+  <footer id="footer" class="footer dark-background" dir="rtl">
 
   <div class="container footer-top">
     <div class="row gy-4">
@@ -47,7 +94,7 @@
         <form method="post" class="php-email-form">
           <div class="newsletter-form">
             <input type="email" name="email" placeholder="ایمیل خود را وارد کنید">
-            <input type="submit" value="اشتراک‌گذاری">
+            <input type="submit" name="submit" value="اشتراک‌گذاری">
           </div>
         </form>
       </div>
@@ -58,12 +105,11 @@
   <div class="container copyright text-center mt-4">
     <p>© <span>کپی‌رایت</span> <strong class="px-1 sitename">PixelWebStudio</strong> <span>تمامی حقوق محفوظ است</span></p>
     <div class="credits">
-      <!-- همه لینک‌های فوتر باید دست نخورده باقی بمانند. -->
-      <!-- شما می‌توانید لینک‌ها را فقط اگر نسخه حرفه‌ای خریداری کرده‌اید حذف کنید. -->
-      <!-- اطلاعات مجوز: https://bootstrapmade.com/license/ -->
-      <!-- نسخه حرفه‌ای با فرم تماس کارکردی PHP/AJAX را خریداری کنید: [buy-url] -->
       طراحی شده توسط <a href="https://bootstrapmade.com/">صبغت الله بهادری</a>
     </div>
   </div>
 
 </footer>
+</body>
+</html>
+

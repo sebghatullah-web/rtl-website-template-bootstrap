@@ -14,7 +14,7 @@
       <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/team1.avif" class="img-fluid" alt="">
           </div>
           <div class="member-info">
             <div class="social">
@@ -23,7 +23,7 @@
               <a href=""><i class="bi bi-instagram"></i></a>
               <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
-            <h4>صبغت الله </h4>
+            <h4>صبغت الله بهادری</h4>
             <span>مدیرعامل</span>
           </div>
         </div>
@@ -32,7 +32,7 @@
       <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/team2.avif" class="img-fluid" alt="">
           </div>
           <div class="member-info">
             <div class="social">
@@ -41,7 +41,7 @@
               <a href=""><i class="bi bi-instagram"></i></a>
               <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
-            <h4>سارا جانسون</h4>
+            <h4>مسلیم فیصل</h4>
             <span>مدیر محصول</span>
           </div>
         </div>
@@ -50,7 +50,7 @@
       <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/team3.avif" class="img-fluid" alt="">
           </div>
           <div class="member-info">
             <div class="social">
@@ -59,7 +59,7 @@
               <a href=""><i class="bi bi-instagram"></i></a>
               <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
-            <h4>ویلیام اندرسون</h4>
+            <h4>مصطفی کریمی</h4>
             <span>مدیر ارشد فناوری</span>
           </div>
         </div>

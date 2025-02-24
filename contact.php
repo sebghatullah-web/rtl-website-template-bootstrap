@@ -1,4 +1,48 @@
-<!-- Contact Section -->
+<?php
+// اتصال به دیتابیس
+$servername = "localhost";
+$username = "root";  // یا نام کاربری دیتابیس شما
+$password = "";      // یا رمز عبور دیتابیس شما
+$dbname = "example";
+
+// ایجاد اتصال
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// چک کردن اتصال
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // دریافت داده‌ها از فرم
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+
+  // کوئری برای وارد کردن داده‌ها به دیتابیس
+  $sql = "INSERT INTO messages (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
+
+  if ($conn->query($sql) === TRUE) {
+    echo "<script>alert('پیام شما با موفقیت ارسال شد.');</script>";
+  } else {
+    echo "<script>alert('خطا در ارسال پیام. لطفاً دوباره تلاش کنید.');</script>";
+  }
+
+  $conn->close();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact | examplpe bootstrap template</title>
+</head>
+<body>
+  <!-- Contact Section -->
 <section id="contact" class="contact section" dir="rtl">
 
   <!-- Section Title -->
@@ -43,7 +87,7 @@
       </div>
 
       <div class="col-lg-7">
-        <form method="post" class="php-email-form" data-aos="fade-up">
+        <form method="post" data-aos="fade-up">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -66,12 +110,7 @@
               <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
             </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">در حال بارگذاری...</div>
-              <div class="error-message"></div>
-              <div class="sent-message">پیام شما ارسال شد. متشکریم!</div>
-
-              <button type="submit">ارسال پیام</button>
+              <button type="submit" name="submit">ارسال پیام</button>
             </div>
 
           </div>
@@ -83,3 +122,8 @@
   </div>
 
 </section><!-- /Contact Section -->
+</body>
+</html>
+
+
+
