@@ -45,7 +45,7 @@
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>سول گودمن</h3>
+            <h3>محمد مرادیان</h3>
             <h4>مدیرعامل و بنیان‌گذار</h4>
           </div>
         </div><!-- پایان آیتم نظر مشتری -->
@@ -58,7 +58,7 @@
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>سارا ویلسون</h3>
+            <h3>سارا نیکزاد</h3>
             <h4>طراح</h4>
           </div>
         </div><!-- پایان آیتم نظر مشتری -->
@@ -71,7 +71,7 @@
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>جنا کارلیس</h3>
+            <h3>دریا جهانبخش</h3>
             <h4>صاحب فروشگاه</h4>
           </div>
         </div><!-- پایان آیتم نظر مشتری -->
@@ -84,7 +84,7 @@
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>مت برندون</h3>
+            <h3>مصطفی نوری</h3>
             <h4>فریلنسر</h4>
           </div>
         </div><!-- پایان آیتم نظر مشتری -->
@@ -97,7 +97,7 @@
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>جان لارسن</h3>
+            <h3>شمس قمریان</h3>
             <h4>کارآفرین</h4>
           </div>
         </div><!-- پایان آیتم نظر مشتری -->

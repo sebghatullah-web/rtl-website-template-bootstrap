@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <i class="bi bi-telephone flex-shrink-0"></i>
             <div>
               <h3>تماس با ما</h3>
-              <p>+93 791 349 150</p>
+              <p>150 349 791 93+</p>
             </div>
           </div><!-- End Info Item -->
 

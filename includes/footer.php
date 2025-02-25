@@ -51,7 +51,7 @@ $conn->close();
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
         <a href="index.html" class="logo d-flex align-items-center">
-          <span class="sitename">PixelWEbStudio</span>
+          <span class="sitename">Example</span>
         </a>
         <div class="footer-contact pt-3">
           <p>202</p>
@@ -103,7 +103,7 @@ $conn->close();
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p>© <span>کپی‌رایت</span> <strong class="px-1 sitename">PixelWebStudio</strong> <span>تمامی حقوق محفوظ است</span></p>
+    <p>© <span>کپی‌رایت</span> <strong class="px-1 sitename">Example</strong> <span>تمامی حقوق محفوظ است</span></p>
     <div class="credits">
       طراحی شده توسط <a href="https://bootstrapmade.com/">صبغت الله بهادری</a>
     </div>

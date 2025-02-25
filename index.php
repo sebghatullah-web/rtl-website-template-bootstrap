@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - PixelWEbStudio Bootstrap Template</title>
+  <title>Index - Example Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -28,39 +28,38 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Squadfree
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+  * Template Name: Example
+  * Template URL: https:https://github.com/sebghatullah-web/rtl-website-template-bootstrap
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Author: Sebghatullah Bahadori
   ======================================================== -->
 
-  <style>
+    <style>
 
-    .hidden-text {
-        display: none;
-    }
-
-    p {
-            text-align: justify;
-            line-height: 1.8;
+        .hidden-text {
+            display: none;
         }
 
-    .show-more-btn {
-        display: block;
-        margin-top: 10px;
-        padding: 8px 15px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+        p {
+                text-align: justify;
+                line-height: 1.8;
+            }
 
-    .show-more-btn:hover {
-        background-color: #0056b3;
-    }
-</style>
+        .show-more-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .show-more-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body class="index-page" dir="rtl">
